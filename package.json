@@ -16,6 +16,7 @@
     "ant-design-vue": "1.7.6",
     "chart.js": "3.4.1",
     "core-js": "3.15.2",
+    "sass": "^1.81.0",
     "vue": "2.6.14",
     "vue-github-buttons": "^3.1.0",
     "vue-router": "3.5.2"
@@ -24,9 +25,8 @@
     "@vue/cli-plugin-babel": "4.5.13",
     "@vue/cli-plugin-router": "4.5.13",
     "@vue/cli-service": "4.5.13",
-    "node-sass": "^9.0.0",
+    "cross-env": "^7.0.3",
     "sass-loader": "^10",
-    "vue-template-compiler": "2.6.14",
-    "cross-env": "^7.0.3"
+    "vue-template-compiler": "2.6.14"
   }
 }
