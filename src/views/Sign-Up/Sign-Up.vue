@@ -1,7 +1,3 @@
-<!-- 
-	This is the sign up page, it uses the dashboard layout in: 
-	"./layouts/Default.vue" .
- -->
 
 <template>
 	<div>

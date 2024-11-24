@@ -26,6 +26,7 @@
 	// Primary Sidebar
 	.ant-layout-sider.sider-primary {
 		width: 250px;
+		overflow: hidden;
 		position: fixed;
 		left: 0;
 		z-index: 99;
@@ -264,20 +265,27 @@
 
 		.aside-footer {
 			display: none;
-			padding-top: 100px;
-			padding-bottom: 33px;
+			position: relative;
 				
 			@media( min-width: $lg ){
 				padding-bottom: 20px;
+				height: 23%;
 			}
 		}
 		.footer-box {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
 			background-color: $color-gray-1;
 			color: $color-gray-12;
+			display: flex;
+			gap: 6px;
 			padding: 16px;
 			border-radius: 8px;
 			box-shadow: $shadow-1;
 			margin-bottom: 8px;
+			text-overflow: ellipsis;
+			overflow: hidden;
 
 			.icon {
 				display: inline-flex;
@@ -287,7 +295,6 @@
 				border-radius: 6px;
 				justify-content: center;
 				align-items: center;
-				margin-bottom: 15px;
 				background-color: $color-primary;
 			}
 			svg path {
@@ -298,10 +305,15 @@
 				font-size: 16px;
 				color: $color-gray-12;
 				margin-bottom: 0;
+			text-overflow: ellipsis;
+			overflow: hidden;
 			}
 			p {
 				color: $color-gray-7;
 				font-weight: $fw-semibold;
+				
+			text-overflow: ellipsis;
+			overflow: hidden;
 			}
 			button {
 				margin: 0;
@@ -317,6 +329,8 @@
 			background-color: $color-primary;
 			color: $color-gray-1;
 			box-shadow: none;
+			display: flex;
+			align-items: center;
 			.icon {
 				background-color: $color-gray-1;
 			}
@@ -363,6 +377,15 @@
 	}
 	&.has-sidebar .ant-layout-sider.sider-primary .aside-footer {
 		display: block;
+			position: relative;
+			padding-bottom: 20px;
+			height: 17%;
+
+			@media( min-width: $lg ){
+				padding-bottom: 20px;
+				height: 23%;
+			}
+
 	}
 	.sidebar-overlay {
 		position: absolute;
@@ -516,7 +539,7 @@
 		}
 	}
 	.ant-page-header-heading {
-		margin-top: 0;;
+		margin-top: 0;
 		.ant-page-header-heading-title {
 			font-weight: $fw-bold;
 			font-size: 16px;

@@ -1,10 +1,7 @@
 
 ## Quick start
 
-Quick start options:
-
-- Download from [Creative Tim](https://www.creative-tim.com/product/muse-vue-ant-design-dashboard?ref=readme-sud).
-
+Quick start 
 ## Terminal Commands
 
 1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
@@ -15,13 +12,6 @@ Quick start options:
 :rocket: You can deploy your own version of the template to Genezio with one click:
 
 [![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/muse-vue-ant-design-dashboard&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
-
-## Documentation
-The documentation for the Muse Vue Ant Design Dashboard is hosted at our [website](http://demos.creative-tim.com/muse-vue-ant-design-dashboard/documentation?ref=readme-sud).
-
-### What's included
-
-Within the download you'll find the following directories and files:
 
 ```
 muse-vue-ant-design-dashboard

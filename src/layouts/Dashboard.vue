@@ -6,7 +6,8 @@
 	<div>
 
 		<!-- Dashboard Layout -->
-		<a-layout class="layout-dashboard" id="layout-dashboard" :class="[navbarFixed ? 'navbar-fixed' : '', ! sidebarCollapsed ? 'has-sidebar' : '', layoutClass]">
+		<a-layout class="layout-dashboard" id="layout-dashboard" :class="[navbarFixed ? 'navbar-fixed' : '', ! sidebarCollapsed ? 'has-sidebar' : '', navbar-fixed]">
+		<!-- <a-layout class="layout-dashboard" id="layout-dashboard" :class="[navbarFixed ? 'navbar-fixed' : '', ! sidebarCollapsed ? 'has-sidebar' : '', layoutClass]"> -->
 			
 			<!-- Main Sidebar -->
 			<DashboardSidebar
@@ -96,10 +97,10 @@
 				sidebarColor: "primary",
 				
 				// Main sidebar theme : light, white, dark.
-				sidebarTheme: "light",
+				sidebarTheme: "white",
 
 				// Header fixed status.
-				navbarFixed: false,
+				navbarFixed: true,
 
 				// Settings drawer visiblility status.
 				showSettingsDrawer: false,
