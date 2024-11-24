@@ -1,5 +1,4 @@
 // Click away event directive
-// Credits : https://medium.com/@Taha_Shashtari/an-easy-way-to-detect-clicks-outside-an-element-in-vue-1b51d43ff634 
 import Vue from 'vue'
 // This variable will hold the reference to
 // document's click handler

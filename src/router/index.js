@@ -126,6 +126,14 @@ let routes = [
   },
 ];
 
+// Array of public route names
+const publicRoutes = [
+  'Sign-In',
+  'Sign-Up',
+];
+
+// Define the router after routes have been created
+
 // Function to add layout property from each route to the meta
 // object so it can be accessed later.
 function addLayoutToRoute(route, parentLayout = "default") {
@@ -156,4 +164,25 @@ const router = new VueRouter({
   },
 });
 
+// Navigation guard
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('token'); // Get token from local storage
+  
+  // If there's a token, prevent navigation to public routes
+  if (token && publicRoutes.includes(to.name)) {
+    // Redirect to the dashboard or another private route if already logged in
+    return next({ path: '/dashboard' }); // You can redirect to any private route you want
+  }
+
+  // If the route is not in the public routes list and no token exists, redirect to sign-in
+  if (!publicRoutes.includes(to.name) && !token) {
+    // Redirect to sign-in if it's a private route and no token exists
+    return next({ path: '/sign-in' });
+  }
+
+  next(); // Allow navigation
+});
+
+
+// Export the router
 export default router;
